@@ -14,7 +14,6 @@ public class Cappuccino extends Coffee{
         if(choiceCaramel.equals("1")) {
             price += extraCaramel;
             plusCaramel = true;
-            System.out.println(price);
         } else if (choiceCaramel.equals("0")) {
             price += 0;
         } else {
@@ -23,8 +22,8 @@ public class Cappuccino extends Coffee{
         }
     }
 
-    public void getBill(double baseCoffeePrice) {
-        System.out.println("Coffee: " + baseCoffeePrice);
+    public void getBill() {
+        System.out.println("Coffee: " + getBasePrice());
         String bill = "";
         if(plusMilk) {
             bill += "Extra milk added " + extraMilk + "\n";
@@ -35,7 +34,8 @@ public class Cappuccino extends Coffee{
         if(plusCaramel) {
             bill += "Extra caramel added " + extraCaramel + "\n";
         }
-        bill += "Bill: " + (price + baseCoffeePrice) + "\n";
+        price += getBasePrice();
+        bill += "Bill: " + price + "\n";
         System.out.println(bill);
     }
 

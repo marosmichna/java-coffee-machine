@@ -22,8 +22,8 @@ public class LatteMacchiato extends Cappuccino {
         }
     }
 
-    public void getBill(double baseCoffeePrice) {
-        System.out.println("Coffee: " + baseCoffeePrice);
+    public void getBill() {
+        System.out.println("Coffee: " + getBasePrice());
         String bill = "";
         if(plusMilk) {
             bill += "Extra milk added " + extraMilk + "\n";
@@ -37,10 +37,13 @@ public class LatteMacchiato extends Cappuccino {
         if(plusChocolate) {
             bill += "Extra caramel added " + extraChocolate + "\n";
         }
-        bill += "Bill: " + (price + baseCoffeePrice) + "\n";
+        price += getBasePrice();
+        bill += "Bill: " + price + "\n";
         System.out.println(bill);
     }
 
+
+    @Override
     protected double getBasePrice(){
         return 2.25;
     }

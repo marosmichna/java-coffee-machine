@@ -21,7 +21,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         fiveCent = scanner.nextLine();
         allSumPay += (Double.parseDouble(fiveCent) * 0.05);
-        System.out.println(allSumPay);
     }
 
     public void tenCentPay() {
@@ -29,7 +28,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         tenCent = scanner.nextLine();
         allSumPay += (Double.parseDouble(tenCent) * 0.10);
-        System.out.println(allSumPay);
     }
 
     public void twentyCentPay() {
@@ -37,7 +35,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         twentyCent = scanner.nextLine();
         allSumPay += (Double.parseDouble(twentyCent) * 0.20);
-        System.out.println(allSumPay);
     }
 
     public void fiftyCentPay() {
@@ -45,7 +42,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         fiftyCent = scanner.nextLine();
         allSumPay += (Double.parseDouble(fiftyCent) * 0.50);
-        System.out.println(allSumPay);
     }
 
     public void oneEuroPay() {
@@ -53,7 +49,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         oneEuro = scanner.nextLine();
         allSumPay += (Double.parseDouble(oneEuro) * 1.00);
-        System.out.println(allSumPay);
     }
 
     public void twoEuroPay() {
@@ -61,7 +56,6 @@ public class YourPay {
         Scanner scanner = new Scanner(System.in);
         twoEuro = scanner.nextLine();
         allSumPay += (Double.parseDouble(twoEuro) * 2.00);
-        System.out.println(allSumPay);
     }
 
     public void yourAccount(Billable bill) {
